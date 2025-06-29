@@ -1,5 +1,8 @@
 name: WakaTime status update
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ main ]
