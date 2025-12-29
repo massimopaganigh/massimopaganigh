@@ -15,6 +15,15 @@ jobs:
     name: Update the WakaTime Stat
     runs-on: ubuntu-latest
     steps:
+      # Checkout the repository
+      - uses: actions/checkout@v3
+      
+      # Configure git to commit under your name instead of GitHub Actions bot
+      - name: Configure Git
+        run: |
+          git config user.name "massimopaganigh"
+          git config user.email "massimopaganigh@users.noreply.github.com"
+      
       # Use avinal/Profile-Readme-WakaTime@<latest-release-tag> for latest stable release
       # Do not change the line below until you have forked this repository
       # If you have forked this project you can use <username>/Profile-Readme-WakaTime@master instead
