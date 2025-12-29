@@ -30,6 +30,3 @@ jobs:
           COMMIT_MSG: "Update coding activity statistics"
           # Range of fetching data - default is "last_7_days". See https://wakatime.com/developers#stats for more options
           STATS_RANGE: "last_7_days"
-          # Committer name and email - commits will be made under this identity instead of GitHub Actions bot
-          COMMITTER_NAME: "massimopaganigh"
-          COMMITTER_EMAIL: "massimopaganigh@users.noreply.github.com"
